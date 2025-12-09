@@ -1,0 +1,44 @@
+body{
+    /*ocupa a altura total da janela de visualizaçao (viewport)*/
+    min-height: 100vh;/*Remove margens padrao do navegador*/
+    margin: 0%;/*Habilita o flexbox no body*/
+    display: flex;/*Centraliza os itens verticalmente */
+    align-items: center;/*Opcional: define um plano de fundo*/
+    background-color: #f0f0f0;/*Estilo para o container do formulario*/
+
+}
+.login-container{
+    /*opcional:Define uma largura maxima*/
+    max-width: 400px; /*opcional:adiciona preenchimento*/
+    height: auto;
+    padding: 20px; /*opcional:cor de fundo para o formulario*/
+    background-color:white; /*opcional:sombra para destaque*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*opcional:Bordas arredondadas*/
+    border-radius: 8px; /*Centraliza o texto do titulo dentro do container*/
+    text-align: center; /*estilo de layout e botoes(ajuste conforme seu design)*/
+
+}
+.login-form input{
+width: 100%;
+padding: 8px;
+margin-bottom: 15px;
+box-sizing: border-box;/*garante que padding nao aumente a largura total*/
+
+}
+.login-form label,.login-form p{
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;/*Distribui os botoes*/
+    margin-top: 20px;
+
+}
+.botoes button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
